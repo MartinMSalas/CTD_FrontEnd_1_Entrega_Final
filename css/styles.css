@@ -4,10 +4,21 @@
     max-width: 375px;
 }
 
-header{
+header section{
     background-color:aliceblue;
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    
 }
-
+header div{
+    display: block;
+    background-color: brown;
+    width: 100%;
+    transition: width 4s,opacity 4s, margin 4s ;
+}
+header div:hover{
+    width: 100px;
+    opacity: 0;
+    margin-left: 100%;
+}
