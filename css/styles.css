@@ -11,14 +11,27 @@ header section{
     padding: 20px;
     
 }
-header div{
-    display: block;
+.unDiv{
+    /* display: block; */
+    display: inline-block;
     background-color: brown;
-    width: 100%;
+    width: 175px;
     transition: width 4s,opacity 4s, margin 4s ;
 }
-header div:hover{
+header .otroDiv{
+    /* display: block; */
+    display: inline-block;
+    background-color: blue;
+    width: 175px;
+    transition: width 4s,opacity 4s, margin 4s ;
+}
+/* header div:hover{
     width: 100px;
     opacity: 0;
-    margin-left: 100%;
+    margin-right: 100px;
+} */
+header div:single-button{
+    width: 100px;
+    opacity: 0;
+    margin-right: 100px;
 }
