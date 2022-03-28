@@ -29,7 +29,7 @@ main article{
 }
 article p{
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     font-size: 20px;
     color: #232C50;
 }
@@ -40,6 +40,94 @@ button{
     border-radius: 50px;
     
 }
+article h2{
+    font-size: 36px;
+    color: #232C50;
+    padding: 8px;
+    text-align: center;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 42px;
+    gap: 20px;
+    padding: 60px 35px;
+    text-align: center;
+    background-color:#F3603B;
+    color: #FFFFFF;
+}
+.botonInvertido{
+    width: 134px;
+    height: 44px;
+    color: #F3603B;
+    background-color:#FFFFFF;
+    border-radius: 50px;
+    
+}
+
+/* .subtitulo{
+    
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 15px;
+    border: solid red 1px;
+    width: 100%;
+    background-color:  rgba(242, 95, 58,0.15);
+} */
+
+.subtitulo{
+    position: relative;
+    width: 90%;
+}
+.elipse{
+    position: absolute;
+    background-color:#F3603B;
+    color: #FFFFFF;
+    right: 90%;
+    border-radius: 50px;
+    padding: 0 10px;
+}
+h3{
+    /* width: 100%; */
+    padding: 0 0 0 40px;
+    color: #232C50;
+    /* background-color: rgb(255, 239, 234); */
+    background-color:  rgba(242, 95, 58,0.15);
+}
+
+.nombre{
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 30, 37);
+    padding: 20px;
+    gap: 5px;
+}
+.search{
+    border-radius: 50px;
+    width: 248px;
+    height: 44px;
+    background-color: #FFFFFF;
+    
+}
+
+.botonGo{
+    background-color:#F3603B;
+    width: 67px;
+    height: 44px;
+    border-radius: 50px;
+}
+
+
 
 
 .unDiv{
