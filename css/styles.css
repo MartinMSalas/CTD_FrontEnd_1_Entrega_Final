@@ -13,10 +13,11 @@ body{
 header section{
     /* background-color:blueviolet; */
     display: flex;
-    justify-content: space-between;
-    /* padding: 20px; */
+    /* justify-content: space-between; */
+    padding: 10%;
     align-items: center;
     border: solid red 1px;
+    gap: 40%;
     
 }
 h1{
