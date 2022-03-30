@@ -7,14 +7,16 @@
 
 }
 body{
-    width: 1440px;
+    /* width: 1440px; */
 }
 
 header section{
-    background-color:blueviolet;
+    /* background-color:blueviolet; */
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    /* padding: 20px; */
+    align-items: center;
+    border: solid red 1px;
     
 }
 h1{
@@ -217,26 +219,32 @@ header .otroDiv{
     margin-right: 100px;
 } 
 
-.desktopHeaderNav{
+.desktopHeaderNav ul{
     display: none;
 }
-@media (min-width:376px){
+.desktopButton{
+    display: none;
+}
+@media (min-width:450px){
     .hamburguesa {
         display: none;
     }
-    .desktopHeaderNav{
+
+    .desktopHeaderNav ul {
         display: flex;
-        align-items: center;
+        justify-content: center;
+        /* align-items: center; */
+        width: 382px;
         
-        
+        /* border: red 1px solid; */
+        list-style: none;
+
     }
     .desktopHeaderNav ul li{
-        display: flex;
-        flex-direction: row;
-        /* width: 50px; */
         font-size: 13px;
-        border: red 1px solid;
-        
+    }
+    .desktopButton{
+        display: block;
     }
     header section {
         padding: 75px 190px;
