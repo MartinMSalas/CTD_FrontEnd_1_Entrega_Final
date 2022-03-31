@@ -1,30 +1,19 @@
 * {
     box-sizing: border-box;
     margin: 0;
-   
-    /* max-width: 375px; */
     font-family: "Be Vietnam";
-
-
 }
 body{
-    /* width: 1440px; */
-    background-color: #E5E5E5;
+    background-color: #FFFFFF;
 }
-
 header section{
-    /* background-color:blueviolet; */
     display: flex;
     justify-content: space-between;
     padding: 10%;
     align-items: center;
-    border: solid red 1px;
-    /* gap: 40%; */
-    
 }
 h1{
     font-size: 42px;
-    /* font-weight: bold; */
     color: #232C50;
     padding: 8px;
     text-align: center;
@@ -35,7 +24,6 @@ main article{
     flex-direction: column;
     gap:10px;
     align-items: center;
-    border: red solid 1px;
 }
 .lema>img{
     width: 100%;
@@ -43,7 +31,6 @@ main article{
 .lema>div {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 article p{
@@ -53,11 +40,33 @@ article p{
     color: #232C50;
 }
 button{
+    color: white;
+    border: none;
     width: 134px;
     height: 44px;
     background-color:#F3603B;
     border-radius: 50px;
-    
+    transition: box-shadow 1s, opacity 1s;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
+}
+.botonInvertido{
+    width: 134px;
+    height: 44px;
+    color: #F3603B;
+    background-color:#FFFFFF;
+    border-radius: 50px;
+    border: none;
+    transition: color 1s;
+}
+
+.botonInvertido:hover{
+    background-color:#FFFFFF;
+    color:rgba(242, 97, 59, 0.5) ;
+    opacity: 1;
 }
 article h2{
     font-size: 36px;
@@ -77,14 +86,6 @@ aside{
     background-color:#F3603B;
     color: #FFFFFF;
 }
-.botonInvertido{
-    width: 134px;
-    height: 44px;
-    color: #F3603B;
-    background-color:#FFFFFF;
-    border-radius: 50px;
-    
-}
 
 /* .subtitulo{
     
@@ -101,7 +102,6 @@ aside{
     position: relative;
     color: #323851;
     width: 100%;
-    border: green solid 1px;
 }
 .elipse{
     position: absolute;
@@ -127,11 +127,10 @@ h3{
     padding: 40px 0 60px 0;
 }
 .nombre{
-    border: solid yellow 1px;
     padding: 30px 0;
     /* width: 100%; */
     margin-left: 0;
-    background: #E5E5E5;
+    background: #FAFAFA;
 }
 .nombreParrafo{
     padding: 0px 40px;
@@ -156,10 +155,17 @@ footer section{
 }
 
 .botonGo{
-    background-color:#F3603B;
+    color: #FFFFFF;
+    background-color:rgba(243, 96, 59, 1);
     width: 67px;
     height: 44px;
     border-radius: 50px;
+    border: none;
+    transition: background-color 1s;
+}
+.botonGo:hover{
+    cursor: pointer;
+    background-color: rgba(249,143,117,255);
 }
 /* Asi me gusta mas como quedan los links del footer con About us al medio */
 footer nav ul{
@@ -195,24 +201,39 @@ nav ul li{
     width: 120px;
 
 }
+
+header a{
+    color: #242E52;
+}
+header a:visited{
+    color: #242E52
+}
+header a:hover{
+    color:rgba(36, 46, 82, 0.5);
+   
+}
 a{
     text-decoration: none;
+    transition: color 1s, filter 0.5s;
 }
 
-a:visited{
+footer a:visited{
     color: #FFFFFF;
 }
-a:hover {
-    color: #F3603B;
-    background-color: greenyellow;
+
+footer a:hover {
+    color: #F3603B;   
+    
+}
+footer>section>div>nav>a:hover{
+    filter: invert(54%) sepia(18%) saturate(5127%) hue-rotate(334deg) brightness(95%) contrast(105%);
+    
 }
 .redesLogo{
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 5.2vw;
-    border: solid green 1px;
-    /* justify-content: center; */
     align-items: center;
 }
 .redesSociales{
@@ -223,27 +244,12 @@ a:hover {
 }
 
 
-.unDiv{
-    /* display: block; */
-    display: inline-block;
-    background-color: brown;
-    width: 175px;
-    transition: width 4s,opacity 4s, margin 4s ;
-}
-header .otroDiv{
-    /* display: block; */
-    display: inline-block;
-    background-color: blue;
-    width: 175px;
-    transition: width 4s,opacity 4s, margin 4s ;
-}
- header div:hover{
-    width: 100px;
-    opacity: 0;
-    margin-right: 100px;
-} 
 
 
+
+.circulitos{
+    color: #F3603B;
+}
 .soloDesktop{
     display: none;
 }
@@ -336,16 +342,15 @@ header .otroDiv{
         padding: 36px 96px 0 0;
     }
 
-    .listadoBeneficios p{
+    .listadoBeneficios>div>p{
         color: #B9B9C1;
     }
-    .listadoBeneficios{
         
-    }
     .subtitulo{
     }
     h3{
-        background: #E5E5E5;
+        color: #323851;
+        background: #FFFFFF;
         margin-left: 8.4%;
     }
     .listadoBeneficios>div>p{
@@ -357,22 +362,19 @@ header .otroDiv{
         display: flex;
     }
     .ellosDicen{
+        background-color: #FAFAFA;
         display: flex;
         align-items: center;
         margin: 0 31px;
     }
 
     aside{
-        
         flex-direction: row;
-        border: green solid 1px;
         gap:37.4% 45%;
         padding: 4% 12%;
 
     }
     aside>p{
-        border: blue solid 1px;
-        /* font-size: 40px; */
         text-align: start;
     }
     footer section{
@@ -414,5 +416,8 @@ header .otroDiv{
     .formulariesky{
         order: 2;
         width: 33%;
+    }
+    .circulitos{
+        display: none;
     }
 }
